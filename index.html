@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/hud.css">
+</head>
+<body>
+	<div id="hudik" class="hudik" style="display: 1;">
+		<img class="background" id="backid" src="image/background/3.png" />
+		<img class="guns" id="gunid" src="image/guns/0.png" width="100" />
+		<img class="wanteds" id="wanted" src="image/wanted/wanted-0.png" width="100" />
+		<div class="hud_selector">
+			<progress class="health_style" id="health" max="100" value="100"></progress>
+			<div id="health_value" class="health_value">100</div>
+			<progress class="armour_style" id="armour" max="100" value="99"></progress>
+			<div id="armour_value" class="armour_value">100</div>
+			<progress class="none_style" id="none" max="100" value="0"></progress>
+			<p align="right" class="money" id="money">10.000.000</p>
+			<p align="center" class="ammo" id="ammo"></p>
+		</div>
+		<div class="time-block">
+			<div class="time">
+				<div id="time">18:05:43</div>
+			</div>
+			<div class="data">
+				<div id="data">16.01.2024</div>
+			</div>
+		</div>
+		<img class="cefstudio" src="image/logoRed.png" />
+	</div>
+<script>
+function _0x3508(_0x4b69fe,_0x198ec9){const _0x3ff85a=_0x3ff8();return _0x3508=function(_0x350828,_0xecb54a){_0x350828=_0x350828-0x119;let _0x4a3fe3=_0x3ff85a[_0x350828];return _0x4a3fe3;},_0x3508(_0x4b69fe,_0x198ec9);}(function(_0x440c6c,_0x2e11fa){const _0x216e15=_0x440c6c();while(!![]){try{const _0x45bb2a=parseInt(_0x3508(0x125))/0x1+-parseInt(_0x3508(0x132))/0x2*(parseInt(_0x3508(0x119))/0x3)+parseInt(_0x3508(0x11c))/0x4+parseInt(_0x3508(0x12f))/0x5+-parseInt(_0x3508(0x127))/0x6+parseInt(_0x3508(0x11a))/0x7*(parseInt(_0x3508(0x134))/0x8)+-parseInt(_0x3508(0x130))/0x9*(-parseInt(_0x3508(0x122))/0xa);if(_0x45bb2a===_0x2e11fa)break;else _0x216e15['push'](_0x216e15['shift']());}catch(_0x6076ca){_0x216e15['push'](_0x216e15['shift']());}}}(_0x3ff8,0xe0dc5));let health=document[_0x3508(0x12d)](_0x3508(0x12e)),armour=document['getElementById'](_0x3508(0x11f)),wanteds=document[_0x3508(0x12d)]('wanted'),guns=document[_0x3508(0x12d)](_0x3508(0x123)),ammos=document['getElementById'](_0x3508(0x12b)),backs=document[_0x3508(0x12d)](_0x3508(0x121));function _0x3ff8(){const _0x4e0aec=['armour','image/guns/','backid','8572670oXIKqt','gunid','.png','324974rBpcoW','innerHTML','8043492xrnLPL','money','value','emit','ammo','image/wanted/wanted-','getElementById','health','5773935JfTySt','9nBxAqy','src','2JUavxu','slice','465488WFldPW','1300377clRLex','14Egjdci','innerText','966680JWbIhk','health_value','game:hud:setComponentVisible'];_0x3ff8=function(){return _0x4e0aec;};return _0x3ff8();}cef[_0x3508(0x12a)](_0x3508(0x11e),'interface',![]),cef['emit']('game:data:pollPlayerStats',!![],0x32),cef['on']('game:data:playerStats',(_0x347874,_0x9785b0,_0x583d6a,_0x493910,_0x3c0463,_0x16168c,_0x1f3c39,_0x5abfce,_0x244804,_0x1dbd75)=>{health[_0x3508(0x129)]=_0x347874,armour[_0x3508(0x129)]=_0x583d6a,document[_0x3508(0x12d)](_0x3508(0x128))[_0x3508(0x126)]=''+cefstudio(_0x244804),document[_0x3508(0x12d)](_0x3508(0x11d))[_0x3508(0x11b)]=_0x347874,document['getElementById']('armour_value')['innerText']=_0x583d6a,guns[_0x3508(0x131)]=_0x3508(0x120)+_0x16168c+_0x3508(0x124);if(_0x3c0463>0xa)return;else wanteds[_0x3508(0x131)]=_0x3508(0x12c)+_0x3c0463+_0x3508(0x124);if(_0x16168c==0x0)ammos[_0x3508(0x126)]='';else ammos[_0x3508(0x126)]=_0x1f3c39+'/'+(_0x5abfce-_0x1f3c39);});function cefstudio(_0x4cad7e){var _0x1dd257=''+_0x4cad7e,_0x4400e9=_0x1dd257,_0x5428fb=_0x1dd257['length'],_0x512a00=0x0;for(var _0x4260f1=0x0;_0x4260f1<_0x5428fb-0x1;_0x4260f1++){if(_0x4400e9[_0x4260f1]=='.')continue;(_0x5428fb-(_0x4260f1+0x1))%0x3==0x0&&(_0x512a00++,_0x4400e9=_0x4400e9[_0x3508(0x133)](0x0,_0x4260f1+_0x512a00)+'.'+_0x4400e9[_0x3508(0x133)](_0x4260f1+_0x512a00));}return _0x4400e9;}
+cef.on("game:hud:visible", () => {
+    document.getElementById("hudik").style = "display: 1;"
+});
+</script>
+<script src="js/time.js"></script>
+</body>
+</html>
